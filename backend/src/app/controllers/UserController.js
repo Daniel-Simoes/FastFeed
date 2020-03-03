@@ -69,8 +69,6 @@ class UserController {
        return res.status(401).json({ error: 'Error password does not match.' });
     }
 
-
-
        const { id, name } = await user.update(req.body);
 
      return res.json({
@@ -80,6 +78,5 @@ class UserController {
      });
    }
 }
-
 
 export default new UserController();
