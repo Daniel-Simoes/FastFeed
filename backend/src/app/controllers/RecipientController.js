@@ -5,7 +5,6 @@ class RecipientsController {
     const { name, street, number, compliment, state, city, postal_code } = await Recipient.create(req.body);
 
     return res.json({
-      id,
       name,
       street,
       number,
